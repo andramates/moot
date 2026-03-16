@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Moot Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/app.js"></script>
+</head>
+
+<body onload="loadQuestionsForResults()">
+
+<div class="navbar">
+    <div class="logo">Moot Admin</div>
+
+    <form action="/logout" method="post">
+        <button class="logout">Logout</button>
+    </form>
+</div>
+
+<div class="admin-container">
+
+    <h1>Admin Dashboard</h1>
+
+    <div class="admin-grid">
+
+        <div class="card">
+
+            <h3>Create Question</h3>
+
+            <input id="questionTextInput" placeholder="Question text">
+
+            <input id="questionDateInput" type="date">
+
+            <button onclick="createQuestion()">Create Question</button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>View Results</h3>
+
+            <select id="questionSelect"></select>
+
+            <button onclick="getResultsByDate()">Show Results</button>
+
+            <div class="result-box">
+                <p id="resultText"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

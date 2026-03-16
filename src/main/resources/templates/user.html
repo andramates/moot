@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Moot</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/app.js"></script>
+</head>
+
+<body onload="loadQuestion()">
+
+<div class="navbar">
+    <div class="logo">Moot</div>
+
+    <form action="/logout" method="post">
+        <button class="logout">Logout</button>
+    </form>
+</div>
+
+<div class="main">
+
+    <div class="card">
+
+        <h2>Question of the day</h2>
+
+        <p id="questionText" class="question"></p>
+
+        <div class="voteButtons">
+
+            <button class="yes" onclick="vote('YES')">
+                👍 YES
+            </button>
+
+            <button class="no" onclick="vote('NO')">
+                👎 NO
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
