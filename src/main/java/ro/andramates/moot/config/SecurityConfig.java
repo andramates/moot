@@ -30,7 +30,7 @@ public class SecurityConfig {
 
                 .formLogin(login -> login
                         .loginPage("/login")
-                        .defaultSuccessUrl("/user", true)
+                        .successHandler(new CustomLoginSuccessHandler())
                         .permitAll()
                 )
 
