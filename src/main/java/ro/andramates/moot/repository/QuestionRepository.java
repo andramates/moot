@@ -9,5 +9,5 @@ import java.util.Optional;
 public interface QuestionRepository extends JpaRepository<Question, Integer> {
 
     Optional<Question> findByQuestionDate(LocalDate questionDate);
-
+    boolean existsByQuestionDate(LocalDate questionDate);
 }

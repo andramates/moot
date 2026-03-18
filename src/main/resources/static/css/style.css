@@ -236,3 +236,68 @@ body.auth{
     font-size:18px;
     color:#cbd5f5;
 }
+
+.home-card{
+    width:500px;
+}
+
+.countdown-box{
+    margin-top:25px;
+    padding:20px;
+    background:#020617;
+    border-radius:10px;
+}
+
+#countdown{
+    font-size:28px;
+    font-weight:bold;
+    margin-top:5px;
+    color:#5c22bb;
+}
+
+/* HOME BUTTONS */
+
+.auth-btn{
+    background:#5c22bb;
+    border:none;
+    padding:8px 16px;
+    border-radius:6px;
+    color:white;
+    cursor:pointer;
+}
+
+.auth-btn.secondary{
+    background:#334155;
+}
+
+/* input general */
+#questionDateInput {
+    background: #0b0f1a;
+    color: #ffffff;
+    border: 1px solid #5b2cff;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* când dai click */
+#questionDateInput:focus {
+    outline: none;
+    border: 1px solid #8a5cff;
+    box-shadow: 0 0 8px rgba(138, 92, 255, 0.5);
+}
+
+/* icon calendar (Chrome) */
+#questionDateInput::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+/* dacă apare text gri */
+#questionDateInput::-webkit-datetime-edit-text,
+#questionDateInput::-webkit-datetime-edit-month-field,
+#questionDateInput::-webkit-datetime-edit-day-field,
+#questionDateInput::-webkit-datetime-edit-year-field {
+    color: #ffffff;
+}

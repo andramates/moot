@@ -2,6 +2,7 @@ package ro.andramates.moot.controller;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import ro.andramates.moot.domain.Question;
 import ro.andramates.moot.domain.User;
@@ -29,8 +30,16 @@ public class PageController {
     }
 
     @GetMapping("/")
-    public String home() {
-        return "redirect:/login";
+    public String home(Model model){
+
+        Question question = questionRepository
+                .findByQuestionDate(LocalDate.now())
+                .orElse(null);
+
+
+        model.addAttribute("question", question);
+
+        return "index";
     }
 
     @GetMapping("/user")

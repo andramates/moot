@@ -22,6 +22,9 @@ public class QuestionService {
     }
 
     public Question createQuestion(String text, LocalDate date) {
+        if(questionRepository.existsByQuestionDate(date)){
+            throw new RuntimeException("Question already exists for this date");
+        }
 
         Question question = Question.builder()
                 .text(text)

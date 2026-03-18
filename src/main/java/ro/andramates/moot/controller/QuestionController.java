@@ -20,8 +20,7 @@ public class QuestionController {
     @GetMapping("/today")
     public Question getTodayQuestion() {
 
-        return questionService.getTodayQuestion()
-                .orElseThrow(() -> new RuntimeException("No question today"));
+        return questionService.getTodayQuestion().orElse(null);
     }
 
     @PreAuthorize("hasRole('ADMIN')")
