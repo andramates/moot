@@ -1,13 +1,17 @@
-![Java](https://img.shields.io/badge/Java-21-orange)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-Backend-brightgreen)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
-![Spring Security](https://img.shields.io/badge/SpringSecurity-Auth-green)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-black)
 # Moot – Daily Voting Application
 
-Moot is a full-stack web application where users vote on a **daily question** and instantly see community results.
+Moot is a full-stack web application where users vote on a **daily yes/ no question**. Only the admin can see the results.
 
 The application demonstrates backend development using **Spring Boot**, secure authentication with **Spring Security**, and a simple interactive UI.
+
+---
+
+## Preview
+
+![Home](docs/home.png)
+![Login](docs/login.png)
+![Voted](docs/voted.png)
+![Admin](docs/admin.png)
 
 ---
 
@@ -70,11 +74,13 @@ src/main/java
  ├── domain
  ├── repository
  ├── service
+ ├── exception
 
 src/main/resources
  ├── static
  │    ├── css
  │    └── js
+ │    └── images
  └── templates
 ```
 
@@ -168,12 +174,17 @@ http://localhost:8080
 ### User
 
 * Vote on the daily question
-* View results
 
 ### Admin
 
 * Create new questions
 * View voting statistics
+
+---
+
+### Future version
+
+* User can see question history
 
 ---
 

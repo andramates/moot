@@ -54,10 +54,10 @@ async function getResultsByDate(){
 
     const response = await fetch(`/vote/results/${id}`)
 
-    const percentage = await response.text()
+    const percentage =parseFloat(await response.text()).toFixed(2)
 
     document.getElementById("resultText").innerText =
-        "YES votes: " + percentage + "%"
+        "yes: " + percentage + "%  |  no: " + (100 - percentage) + "%"
 
 }
 
