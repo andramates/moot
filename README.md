@@ -8,10 +8,17 @@ The application demonstrates backend development using **Spring Boot**, secure a
 
 ## Preview
 
-![Home](docs/home.png)
-![Login](docs/login.png)
-![Voted](docs/voted.png)
-![Admin](docs/admin.png)
+<h3>Home</h3>
+<img src="docs/home.png" width="600">
+
+<h3>Login</h3>
+<img src="docs/login.png" width="600">
+
+<h3>Voted</h3>
+<img src="docs/voted.png" width="600">
+
+<h3>Admin</h3>
+<img src="docs/admin.png" width="600">
 
 ---
 
