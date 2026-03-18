@@ -14,6 +14,9 @@ The application demonstrates backend development using **Spring Boot**, secure a
 <h3>Login</h3>
 <img src="docs/login.png" width="600">
 
+<h3>Vote</h3>
+<img src="docs/vote.png" width="600">
+
 <h3>Voted</h3>
 <img src="docs/voted.png" width="600">
 
